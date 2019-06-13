@@ -314,11 +314,11 @@ func generateSentinelDeployment(rf *redisfailoverv1.RedisFailover, labels map[st
 							},
 							Resources: corev1.ResourceRequirements{
 								Limits: corev1.ResourceList{
-									corev1.ResourceCPU:    resource.MustParse("10m"),
+									corev1.ResourceCPU:    resource.MustParse("100m"),
 									corev1.ResourceMemory: resource.MustParse("16Mi"),
 								},
 								Requests: corev1.ResourceList{
-									corev1.ResourceCPU:    resource.MustParse("10m"),
+									corev1.ResourceCPU:    resource.MustParse("50m"),
 									corev1.ResourceMemory: resource.MustParse("16Mi"),
 								},
 							},
